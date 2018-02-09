@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #cccccc;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.page {
+    background-color: #f4f4f4;
+    padding: 30px 60px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 115%;
+}
+
+a {
+    color: #f67327;
+}
+
+aside:nth-of-type(odd) {
+    float: right;
+    text-align: center;
+    margin-left: 40px;
+}
+
+aside:nth-of-type(even) {
+    float: left;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.featured-photo img {
+    width: 500px;
+}
+
+figure img {
+    width: 400px;
+}
+
+figure img.portrait {
+    width: 200px;
+}
+
+figure figcaption {
+    font-size: 80%;
+    font-style: italic;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 30px 0;
+}
+
+/*--- Header --*/
+header {
+    background-color: #043954;
+    color: #ffffff;
+    border-bottom: 3px solid #f67327;
+    padding: 20px 0;
+}
+
+#branding {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 23px;
+}
+
+nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header .highlight, header .current a {
+    color: #f67327;
+}
+
+header nav a:hover {
+    color: #cccccc;
+}
+
+/*--- Banner --*/
+#banner {
+    background: url('banner.jpg') no-repeat;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: right;
+    height: 750px;
+    color: #ffffff;
+}
+
+.banner-inner {
+    width: 70%;
+    padding-top: 120px;
+    text-align: left;
+}
+
+#banner h1 {
+    font-size: 400%;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-family: Arial, sans-serif;
+    #text-shadow: 1px 1px 2px #000000;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+#banner a {
+    padding: 12px 42px;
+    font-size: 120%;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    color: #043954;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#banner a:hover {
+    background-color: #043954;
+    color: #ffffff;
+}
+
+/**--- Topic --*/
+#blog-post p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#blog-post p.tag {
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+#blog-post p.date {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/**--- Brgy Imelda Marcos --*/
+#barangay-banner {
+    background: url("brgy-banner.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#barangay-overview h1 {
+    margin-bottom: 30px;
+}
+
+#barangay-overview p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#barangay-overview h2, #barangay-overview h3 {
+    margin-top: 20px;
+}
+
+/**--- About Us --*/
+#page-banner {
+    background: url("our-team.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#our-team h1 {
+    margin-bottom: 30px;
+}
+
+#our-team p {
+    text-align: justify;
+}
+
+/**--- Support Us Footer --*/
+#support-us {
+    background-color: #043954;
+    border-top: 3px solid #f67327;
+    padding: 20px 0;
+    padding-bottom: 10px;
+    color: #ffffff;
+    margin: auto;
+}
+
+#support-us h2 {
+    margin-top: 2px;
+    width: 40%;
+    float: left;
+}
+
+ul.social {
+    list-style: none;
+}
+
+ul.social li {
+    font-size: 80%;
+    padding: 0 50px;
+    font-family: Arial, sans-serif;
+    display: inline;
+    float: left;
+}
+
+ul.social li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social div.social-logo {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.8;
+}
+.social div.social-logo:hover {
+    opacity: 1.0;
+}
+
+#facebook {
+    background: url("fb.png") no-repeat center;
+    background-size: cover;
+}
+
+#twitter {
+    background: url("twitter.png") no-repeat center;
+    background-size: cover;
+}
+
+#instagram {
+    background: url("instagram.png") no-repeat center;
+    background-size: cover;
+}
+
+#gmail {
+    background: url("gmail.png") no-repeat center;
+    background-size: cover;
+}
+
+.label {
+    font-size: 90%;
+}
+
+/**--- Footer --*/
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    #support-us h2 {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 110%;
+    }
+
+    ul.social li {
+        float: none;
+        display: inline-block;
+    }
+
+    #branding {
+        font-size: 200%;
+    }
+
+    nav {
+        margin-top: 15px;
+        font-size: 95%;
+    }
+
+    #banner h1 {
+        font-size: 350%;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+}
