@@ -294,6 +294,134 @@ footer p {
 }
 
 /* Media Queries */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .page {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #branding {
+        font-size: 150%;
+        float: none;
+    }
+
+    nav {
+        margin-top: 10px;
+        font-size: 65%;
+        float: none;
+    }
+
+    nav ul li {
+        padding-left: 10px;
+    }
+
+    #banner {
+        height: 450px;
+    }
+
+    .banner-inner {
+        padding-top: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #banner h1 {
+        font-size: 300%;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    #banner p {
+        font-size: 100%;
+    }
+
+    .featured-photo img {
+        width: 300px;
+    }
+
+    figure img {
+        width: 300px;
+    }
+
+    figure img.portrait {
+        width: 100px;
+    }
+
+    aside:nth-of-type(odd) {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    aside:nth-of-type(even) {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #barangay-banner {
+        height: 200px;
+    }
+
+    #barangay-overview h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #page-banner {
+        height: 200px;
+        text-align: justify;
+    }
+
+    #our-team h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #support-us h2 {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 110%;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+    ul.social li {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+
+    footer p {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 80%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 180%;
@@ -354,7 +482,7 @@ footer p {
     #our-team h1 {
         margin-bottom: 5px;
     }
-    
+
     #support-us h2 {
         width: 100%;
         float: none;
