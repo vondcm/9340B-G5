@@ -69,7 +69,7 @@ main {
     padding: 30px 0;
 }
 
-/*--- Header --*/
+/* Header */
 header {
     background-color: #043954;
     color: #ffffff;
@@ -109,7 +109,7 @@ header nav a:hover {
     color: #cccccc;
 }
 
-/*--- Banner --*/
+/* Banner */
 #banner {
     background: url('banner.jpg') no-repeat;
     padding-bottom: 30px;
@@ -133,7 +133,6 @@ header nav a:hover {
 
 #banner p {
     font-family: Arial, sans-serif;
-    #text-shadow: 1px 1px 2px #000000;
     font-size: 110%;
     margin-bottom: 15px;
 }
@@ -156,7 +155,7 @@ header nav a:hover {
     color: #ffffff;
 }
 
-/**--- Topic --*/
+/* Topic */
 #blog-post p {
     margin-bottom: 30px;
     text-align: justify;
@@ -173,7 +172,7 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
-/**--- Brgy Imelda Marcos --*/
+/* About the barangay */
 #barangay-banner {
     background: url("brgy-banner.jpg") no-repeat;
     background-size: cover;
@@ -194,7 +193,7 @@ header nav a:hover {
     margin-top: 20px;
 }
 
-/**--- About Us --*/
+/* About Us */
 #page-banner {
     background: url("our-team.jpg") no-repeat;
     background-size: cover;
@@ -211,7 +210,7 @@ header nav a:hover {
     text-align: justify;
 }
 
-/**--- Support Us Footer --*/
+/* Support us */
 #support-us {
     background-color: #043954;
     border-top: 3px solid #f67327;
@@ -280,7 +279,7 @@ ul.social li a {
     font-size: 90%;
 }
 
-/**--- Footer --*/
+/* Footer */
 footer {
     background-color: #000000;
     text-align: center;

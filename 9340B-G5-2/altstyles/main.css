@@ -4,10 +4,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.5;
-    background-color: #cccccc;
-    color: #000000;
+    color: rgb(38, 51, 12);
+    background-color: rgb(212, 31, 73);
 }
 
 .container {
@@ -17,8 +17,8 @@ body {
 }
 
 .page {
-    background-color: #f4f4f4;
     padding: 30px 60px;
+    background-color: rgb(162, 225, 96);
 }
 
 h1 {
@@ -26,22 +26,38 @@ h1 {
 }
 
 p {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     font-size: 115%;
 }
 
 a {
-    color: #f67327;
+    color: rgb(38, 51, 12);
+    text-transform: lowercase;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+aside:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 aside:nth-of-type(odd) {
     float: right;
     text-align: center;
     margin-left: 40px;
+    clear: left;
 }
 
 aside:nth-of-type(even) {
     float: left;
+    clear: right;
     text-align: center;
     margin-right: 40px;
 }
@@ -59,30 +75,40 @@ figure img.portrait {
 }
 
 figure figcaption {
-    font-size: 80%;
+    font-size: 90%;
     font-style: italic;
-    margin-top: -5px;
-    margin-bottom: 20px;
+    text-transform: lowercase;
+    padding: 15px 0;
 }
 
 main {
     padding: 30px 0;
 }
 
+p:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
 /* Header */
 header {
-    background-color: #043954;
-    color: #ffffff;
-    border-bottom: 3px solid #f67327;
     padding: 20px 0;
+    background-color: rgb(212, 31, 73);
 }
 
 #branding {
-    color: #ffffff;
     text-decoration: none;
     font-size: 250%;
     font-weight: bold;
     float: left;
+    color: rgb(38, 51, 12);
+    opacity: 0;
+    transition: 0s 180s
+}
+
+#branding:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 nav {
@@ -92,84 +118,127 @@ nav {
 
 nav ul li {
     display: inline;
-    text-transform: uppercase;
     padding-left: 20px;
 }
 
 header nav a {
-    color: white;
     text-decoration: none;
-}
-
-header .highlight, header .current a {
-    color: #f67327;
+    font-size: 130%;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0s 180s;
 }
 
 header nav a:hover {
-    color: #cccccc;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 /* Banner */
 #banner {
-    background: url('banner.jpg') no-repeat;
     padding-bottom: 30px;
+    height: 600px;
+    background: url(background.png) no-repeat;
     background-size: cover;
-    background-position: right;
-    height: 800px;
-    color: #ffffff;
+    background-position: bottom center;
+}
+
+#banner .container {
+    justify-content: center;
 }
 
 .banner-inner {
-    width: 70%;
-    padding-top: 120px;
-    text-align: left;
+    padding-top: 75px;
+    text-align: center;
 }
 
 #banner h1 {
     font-size: 400%;
+    margin-bottom: 250px;
     line-height: normal;
-    margin-bottom: 20px;
+    opacity: 0;
+    transition: 0s 180s;
+    text-transform: lowercase;
 }
 
-#banner p {
-    font-family: Arial, sans-serif;
-    font-size: 110%;
-    margin-bottom: 15px;
+#banner h1:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#banner h1:hover ~ * {
+    opacity: 0.1;
+    transition: 0.2s;
 }
 
 #banner a {
     padding: 12px 42px;
     font-size: 120%;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: rgb(212, 31, 73);
+    color: rgb(38, 51, 12);
     border: none;
-    color: #043954;
     text-decoration: none;
-    transition-duration: 0.5s;
     display: inline-block;
     margin-top: 20px;
+    opacity: 0;
+    transition: 0s 180s;
 }
 
 #banner a:hover {
-    background-color: #043954;
-    color: #ffffff;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#banner p {
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: none;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#banner p:hover {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 /* Topic */
+#blog-post h1 {
+    text-transform: lowercase;
+    opacity: 0;
+    transition: 0s 180s;
+    text-align: center;
+}
+
+#blog-post h1:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
 #blog-post p {
     margin-bottom: 30px;
-    text-align: justify;
+    text-transform: lowercase;
+    opacity: 0;
+    transition: 0s 180s;
+    font-size: 100%;
+}
+
+#blog-post p:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #blog-post p.tag {
-    font-family: sans-serif;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 #blog-post p.date {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    text-transform: lowercase;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 /* About the barangay */
@@ -212,71 +281,68 @@ header nav a:hover {
 
 /* Support us */
 #support-us {
-    background-color: #043954;
-    border-top: 3px solid #f67327;
-    padding: 20px 0;
-    padding-bottom: 10px;
-    color: #ffffff;
-    margin: auto;
+    background-color: rgb(162, 225, 96);
 }
 
 #support-us h2 {
-    margin-top: 2px;
-    width: 40%;
-    float: left;
+    display: none;
 }
 
 ul.social {
     list-style: none;
+    text-align: center;
 }
 
 ul.social li {
     font-size: 80%;
-    padding: 0 50px;
+    padding: 0 3px;
+    width: 50px;
+    height: 50px;
     font-family: Arial, sans-serif;
-    display: inline;
-    float: left;
+    display: inline-block;
 }
 
 ul.social li a {
     color: #ffffff;
     text-decoration: none;
+    opacity: 0;
+    transition: 0s 180s;
 }
 
 .social div.social-logo {
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transition: 0s 180s;
 }
+
 .social div.social-logo:hover {
-    opacity: 1.0;
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #facebook {
     background: url("fb.png") no-repeat center;
-    background-size: cover;
+    background-size: 20px 30px;
 }
 
 #twitter {
     background: url("twitter.png") no-repeat center;
-    background-size: cover;
+    background-size: 15px 30px;
 }
 
 #instagram {
     background: url("instagram.png") no-repeat center;
-    background-size: cover;
+    background-size: 40px 20px;
 }
 
 #gmail {
     background: url("gmail.png") no-repeat center;
-    background-size: cover;
+    background-size: 30px 20px;
 }
 
 .label {
-    font-size: 90%;
+    display: none;
 }
 
 /* Footer */
@@ -284,6 +350,7 @@ footer {
     background-color: #000000;
     text-align: center;
     padding: 10px;
+    text-transform: lowercase;
 }
 
 footer p {
@@ -293,7 +360,7 @@ footer p {
 }
 
 /* Media Queries */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     body {
         background-color: #f4f4f4;
     }
@@ -628,4 +695,4 @@ footer p {
     footer p {
         font-size: 110%;
     }
-}
+} */
