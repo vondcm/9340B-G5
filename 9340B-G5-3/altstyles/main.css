@@ -407,6 +407,52 @@ footer p {
 }
 
 /* Media queries */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+    .page {
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #branding {
+        float: none;
+        font-size: 300%;
+    }
+
+    nav {
+        float: none;
+        margin-top: 0;
+    }
+
+    header nav a {
+        font-size: 140%;
+    }
+
+    nav ul li {
+        padding: 0 20px;
+    }
+
+    .banner-inner {
+        padding-top: 150px;
+    }
+
+    #banner h1 {
+        font-size: 350%;
+    }
+
+    #barangay-banner {
+        height: 400px;
+        background-position: bottom center;
+    }
+
+    #page-banner {
+        height: 400px;
+    }
+}
+
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
@@ -446,19 +492,9 @@ footer p {
         display: none;
     }
 
-    header {
-        text-align: center;
-    }
-
     #branding {
-        float: none;
         font-size: 280%;
         opacity: 1;
-    }
-
-    nav {
-        float: none;
-        margin-top: 0;
     }
 
     header nav a {
