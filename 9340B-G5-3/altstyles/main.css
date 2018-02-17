@@ -6,7 +6,8 @@
 body {
     font-family: Georgia, serif;
     line-height: 1.5;
-    color: rgb(38, 51, 12);
+    text-transform: lowercase;
+    color: #EEE8AA;
     background-color: rgb(212, 31, 73);
 }
 
@@ -17,8 +18,8 @@ body {
 }
 
 .page {
-    padding: 30px 60px;
-    background-color: rgb(162, 225, 96);
+    padding: 60px;
+    background-color: rgb(38, 51, 12);
 }
 
 h1 {
@@ -27,18 +28,17 @@ h1 {
 
 p {
     font-family: Georgia, serif;
-    font-size: 115%;
+    font-size: 110%;
 }
 
 a {
-    color: rgb(38, 51, 12);
-    text-transform: lowercase;
+    color: rgb(253, 127, 54);
 }
 
 aside {
-    background-color: #f4f4f4;
+    background-color: #d3d3d3;
     padding: 20px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     opacity: 0;
     transition: 0s 180s;
 }
@@ -52,26 +52,24 @@ aside:nth-of-type(odd) {
     float: right;
     text-align: center;
     margin-left: 40px;
-    clear: left;
 }
 
 aside:nth-of-type(even) {
     float: left;
-    clear: right;
     text-align: center;
     margin-right: 40px;
 }
 
 .featured-photo img {
-    width: 500px;
+    width: 450px;
 }
 
 figure img {
-    width: 400px;
+    width: 350px;
 }
 
 figure img.portrait {
-    width: 200px;
+    width: 150px;
 }
 
 figure figcaption {
@@ -79,10 +77,7 @@ figure figcaption {
     font-style: italic;
     text-transform: lowercase;
     padding: 15px 0;
-}
-
-main {
-    padding: 30px 0;
+    color: rgb(38, 51, 12);
 }
 
 p:hover {
@@ -98,7 +93,7 @@ header {
 
 #branding {
     text-decoration: none;
-    font-size: 250%;
+    font-size: 300%;
     font-weight: bold;
     float: left;
     color: rgb(38, 51, 12);
@@ -113,12 +108,12 @@ header {
 
 nav {
     float: right;
-    margin-top: 23px;
+    margin-top: 30px;
 }
 
 nav ul li {
     display: inline;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 header nav a {
@@ -127,6 +122,7 @@ header nav a {
     font-weight: bold;
     opacity: 0;
     transition: 0s 180s;
+    color: rgb(38, 51, 12);
 }
 
 header nav a:hover {
@@ -137,7 +133,7 @@ header nav a:hover {
 /* Banner */
 #banner {
     padding-bottom: 30px;
-    height: 600px;
+    height: 800px;
     background: url(background.png) no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -148,17 +144,17 @@ header nav a:hover {
 }
 
 .banner-inner {
-    padding-top: 75px;
+    padding-top: 130px;
     text-align: center;
 }
 
 #banner h1 {
-    font-size: 400%;
-    margin-bottom: 250px;
+    font-size: 500%;
+    margin-bottom: 310px;
     line-height: normal;
     opacity: 0;
     transition: 0s 180s;
-    text-transform: lowercase;
+    color: #ffffff;
 }
 
 #banner h1:hover {
@@ -172,15 +168,15 @@ header nav a:hover {
 }
 
 #banner a {
-    padding: 12px 42px;
-    font-size: 120%;
+    padding: 5px 22px;
+    font-size: 170%;
     cursor: pointer;
-    background-color: rgb(212, 31, 73);
     color: rgb(38, 51, 12);
-    border: none;
+    border: 2px solid rgb(38, 51, 12);
+    text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 50px;
     opacity: 0;
     transition: 0s 180s;
 }
@@ -191,12 +187,13 @@ header nav a:hover {
 }
 
 #banner p {
-    font-size: 120%;
+    font-size: 130%;
     font-weight: bold;
     text-transform: none;
     margin-bottom: 15px;
     opacity: 0;
     transition: 0s 180s;
+    color: rgb(38, 51, 12);
 }
 
 #banner p:hover {
@@ -206,10 +203,10 @@ header nav a:hover {
 
 /* Topic */
 #blog-post h1 {
-    text-transform: lowercase;
     opacity: 0;
     transition: 0s 180s;
     text-align: center;
+    font-size: 250%;
 }
 
 #blog-post h1:hover {
@@ -219,10 +216,10 @@ header nav a:hover {
 
 #blog-post p {
     margin-bottom: 30px;
-    text-transform: lowercase;
     opacity: 0;
     transition: 0s 180s;
-    font-size: 100%;
+    font-size: 110%;
+    text-transform: none;
 }
 
 #blog-post p:hover {
@@ -243,9 +240,9 @@ header nav a:hover {
 
 /* About the barangay */
 #barangay-banner {
-    background: url("brgy-banner.jpg") no-repeat;
+    background: url("brgy-banner.png") no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     margin-bottom: 20px;
 }
 
@@ -255,7 +252,7 @@ header nav a:hover {
 
 #barangay-overview p {
     margin-bottom: 30px;
-    text-align: justify;
+    text-transform: none;
 }
 
 #barangay-overview h2, #barangay-overview h3 {
@@ -264,9 +261,9 @@ header nav a:hover {
 
 /* About Us */
 #page-banner {
-    background: url("our-team.jpg") no-repeat;
+    background: url("our-team.png") no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -277,11 +274,12 @@ header nav a:hover {
 
 #our-team p {
     text-align: justify;
+    text-transform: none;
 }
 
 /* Support us */
 #support-us {
-    background-color: rgb(162, 225, 96);
+    background-color: transparent;
 }
 
 #support-us h2 {
@@ -297,14 +295,12 @@ ul.social li {
     font-size: 80%;
     padding: 0 3px;
     width: 50px;
-    height: 50px;
-    font-family: Arial, sans-serif;
+    height: 35px;
     display: inline-block;
 }
 
 ul.social li a {
     color: #ffffff;
-    text-decoration: none;
     opacity: 0;
     transition: 0s 180s;
 }
@@ -323,22 +319,22 @@ ul.social li a {
 
 #facebook {
     background: url("fb.png") no-repeat center;
-    background-size: 20px 30px;
+    background-size: 18px 26px;
 }
 
 #twitter {
     background: url("twitter.png") no-repeat center;
-    background-size: 15px 30px;
+    background-size: 13px 26px;
 }
 
 #instagram {
     background: url("instagram.png") no-repeat center;
-    background-size: 40px 20px;
+    background-size: 40px 18px;
 }
 
 #gmail {
     background: url("gmail.png") no-repeat center;
-    background-size: 30px 20px;
+    background-size: 24px 18px;
 }
 
 .label {
@@ -358,341 +354,3 @@ footer p {
     font-family: Arial, sans-serif;
     font-size: 90%;
 }
-
-/* Media Queries */
-/* @media screen and (max-width: 767px) {
-    body {
-        background-color: #f4f4f4;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .page {
-        padding: 0;
-    }
-
-    h1 {
-        font-size: 150%;
-    }
-
-    p {
-        font-size: 100%;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    #branding {
-        font-size: 150%;
-        float: none;
-    }
-
-    nav {
-        margin-top: 10px;
-        font-size: 65%;
-        float: none;
-    }
-
-    nav ul li {
-        padding-left: 10px;
-    }
-
-    #banner {
-        height: 450px;
-    }
-
-    .banner-inner {
-        padding-top: 60px;
-        width: 100%;
-        text-align: center;
-    }
-
-    #banner h1 {
-        font-size: 300%;
-        line-height: normal;
-        margin-bottom: 15px;
-    }
-
-    #banner p {
-        font-size: 100%;
-    }
-
-    .featured-photo img {
-        width: 300px;
-    }
-
-    figure img {
-        width: 300px;
-    }
-
-    figure img.portrait {
-        width: 100px;
-    }
-
-    aside:nth-of-type(odd) {
-        float: none;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    aside:nth-of-type(even) {
-        float: none;
-        text-align: center;
-        margin-right: 0;
-    }
-
-    #barangay-banner {
-        height: 200px;
-    }
-
-    #barangay-overview h1 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    #page-banner {
-        height: 200px;
-        text-align: justify;
-    }
-
-    #our-team h1 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    #support-us h2 {
-        width: 100%;
-        float: none;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 110%;
-    }
-
-    ul.social {
-        text-align: center;
-    }
-
-    ul.social li {
-        float: none;
-        display: block;
-        margin-top: 10px;
-    }
-
-    footer p {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size: 80%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    h1 {
-        font-size: 180%;
-    }
-
-    p {
-        font-size: 105%;
-    }
-
-    #branding {
-        font-size: 150%;
-    }
-
-    nav {
-        margin-top: 10px;
-        font-size: 80%;
-    }
-
-    #banner {
-        height: 500px;
-    }
-
-    .banner-inner {
-        padding-top: 70px;
-    }
-
-    #banner h1 {
-        font-size: 350%;
-        line-height: normal;
-        margin-bottom: 15px;
-    }
-
-    .featured-photo img {
-        width: 300px;
-    }
-
-    figure img {
-        width: 300px;
-    }
-
-    figure img.portrait {
-        width: 100px;
-    }
-
-    #barangay-banner {
-        height: 300px;
-    }
-
-    #barangay-overview h1 {
-        margin-bottom: 5px;
-    }
-
-    #page-banner {
-        height: 300px;
-        text-align: justify;
-    }
-
-    #our-team h1 {
-        margin-bottom: 5px;
-    }
-
-    #support-us h2 {
-        width: 100%;
-        float: none;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 110%;
-    }
-
-    ul.social li {
-        float: none;
-        display: inline-block;
-    }
-
-    footer p {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size: 80%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #branding {
-        font-size: 200%;
-    }
-
-    nav {
-        margin-top: 15px;
-        font-size: 95%;
-    }
-
-    #banner {
-        height: 700px;
-    }
-
-    #banner h1 {
-        font-size: 350%;
-        line-height: normal;
-        margin-bottom: 20px;
-    }
-
-    #support-us h2 {
-        width: 100%;
-        float: none;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 110%;
-    }
-
-    ul.social li {
-        float: none;
-        display: inline-block;
-    }
-
-    #barangay-banner {
-        height: 500px;
-    }
-
-    #page-banner {
-        height: 500px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    h1 {
-        font-size: 250%;
-    }
-
-    p {
-        font-size: 115%;
-    }
-
-    #branding {
-        font-size: 250%;
-    }
-
-    nav {
-        font-size: 120%;
-        margin-top: 20px;
-    }
-
-    #banner {
-        height: 800px;
-    }
-
-    .banner-inner {
-        width: 60%;
-        margin-top: 80px;
-    }
-
-    #banner h1 {
-        font-size: 400%;
-        line-height: normal;
-        margin-bottom: 20px;
-    }
-
-    #banner p {
-        font-size: 150%;
-    }
-
-    #support-us h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 170%;
-    }
-
-    ul.social {
-        margin-bottom: 20px;
-    }
-
-    .social div.social-logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    ul.social li {
-        float: none;
-        display: inline-block;
-    }
-
-    .featured-photo img {
-        width: 600px;
-    }
-
-    .featured-photo img {
-        width: 500px;
-    }
-
-    figure img {
-        width: 400px;
-    }
-
-    figure img.portrait {
-        width: 200px;
-    }
-
-    #barangay-banner {
-        height: 600px;
-    }
-
-    #page-banner {
-        height: 600px;
-    }
-
-    footer p {
-        font-size: 110%;
-    }
-} */
