@@ -18,8 +18,9 @@ body {
 }
 
 .page {
-    padding: 60px;
+    padding: 30px 60px;
     background-color: rgb(38, 51, 12);
+    padding-bottom: 60px;
 }
 
 h1 {
@@ -242,21 +243,50 @@ header nav a:hover {
 #barangay-banner {
     background: url("brgy-banner.png") no-repeat;
     background-size: cover;
+    background-position: center top;
     height: 600px;
     margin-bottom: 20px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#barangay-banner:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #barangay-overview h1 {
     margin-bottom: 30px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#barangay-overview h1:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #barangay-overview p {
     margin-bottom: 30px;
     text-transform: none;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#barangay-overview p:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #barangay-overview h2, #barangay-overview h3 {
     margin-top: 20px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#barangay-overview h2:hover, #barangay-overview h3:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 /* About Us */
@@ -266,15 +296,36 @@ header nav a:hover {
     height: 600px;
     margin-bottom: 20px;
     text-align: justify;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#page-banner:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #our-team h1 {
     margin-bottom: 30px;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#our-team h1:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #our-team p {
     text-align: justify;
     text-transform: none;
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+#our-team p:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 /* Support us */
@@ -353,4 +404,154 @@ footer p {
     color: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 90%;
+}
+
+/* Media queries */
+
+/* Extra small devices (lanscape phones, less than 768px) */
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+
+    .page {
+        padding: 10px;
+    }
+
+    aside {
+        opacity: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    aside:nth-of-type(odd) {
+        float: none;
+        margin-left: 0;
+    }
+
+    aside:nth-of-type(even) {
+        float: none;
+        margin-right: 0;
+    }
+
+    .featured-photo img {
+        width: 300px;
+    }
+
+    figure img {
+        width: 300px;
+    }
+
+    figure img.portrait {
+        width: 100px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #branding {
+        float: none;
+        font-size: 200%;
+        opacity: 1;
+    }
+
+    nav {
+        float: none;
+        margin-top: 0;
+    }
+
+    header nav a {
+        font-size: 75%;
+        opacity: 1;
+    }
+
+    nav ul li {
+        padding: 0 4px;
+    }
+
+    #banner {
+        height: 550px;
+    }
+
+    .banner-inner {
+        padding-top: 100px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #banner h1 {
+        font-size: 200%;
+        opacity: 1;
+        margin-bottom: 200px;
+    }
+
+    #banner p {
+        opacity: 1;
+        font-size: 90%;
+    }
+
+    #banner a {
+        opacity: 1;
+        font-size: 100%;
+        margin-top: 0;
+    }
+
+    #blog-post h1 {
+        opacity: 1;
+        font-size: 150%;
+    }
+
+    #blog-post p {
+        opacity: 1;
+        text-align: justify;
+        font-size: 85%;
+    }
+
+    #blog-post p.date {
+        margin-bottom: 15px;
+    }
+
+    #barangay-banner {
+        height: 250px;
+        opacity: 1;
+        background-position: center;
+    }
+
+    #barangay-overview h1 {
+        text-align: center;
+        opacity: 1;
+    }
+
+    #barangay-overview h2 {
+        opacity: 1;
+        text-align: center;
+    }
+
+    #barangay-overview p {
+        text-align: justify;
+        opacity: 1;
+        font-size: 85%;
+    }
+
+    #page-banner {
+        opacity: 1;
+        height: 250px;
+        background-position: center;
+    }
+
+    #our-team h1 {
+        opacity: 1;
+        text-align: center;
+    }
+
+    #our-team p {
+        opacity: 1;
+        font-size: 85%;
+        text-align: justify;
+    }
 }
