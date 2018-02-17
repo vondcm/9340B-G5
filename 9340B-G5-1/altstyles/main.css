@@ -408,6 +408,154 @@ footer p {
 
 /* Media queries */
 
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+    .page {
+        padding: 30px;
+    }
+
+    aside {
+        opacity: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    aside:nth-of-type(odd) {
+        float: none;
+        margin-left: 0;
+    }
+
+    aside:nth-of-type(even) {
+        float: none;
+        margin-right: 0;
+    }
+
+    .featured-photo img {
+        width: 300px;
+    }
+
+    figure img {
+        width: 300px;
+    }
+
+    figure img.portrait {
+        width: 100px;
+    }
+
+    figure figcaption {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #branding {
+        float: none;
+        font-size: 280%;
+        opacity: 1;
+    }
+
+    nav {
+        float: none;
+        margin-top: 0;
+    }
+
+    header nav a {
+        font-size: 100%;
+        opacity: 1;
+    }
+
+    nav ul li {
+        padding: 0 10px;
+    }
+
+    #banner {
+        height: 550px;
+    }
+
+    .banner-inner {
+        padding-top: 100px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #banner h1 {
+        font-size: 300%;
+        opacity: 1;
+        margin-bottom: 200px;
+    }
+
+    #banner p {
+        opacity: 1;
+        font-size: 100%;
+    }
+
+    #banner a {
+        opacity: 1;
+        font-size: 110%;
+        margin-top: 0;
+    }
+
+    #blog-post h1 {
+        opacity: 1;
+        font-size: 180%;
+    }
+
+    #blog-post p {
+        opacity: 1;
+        text-align: justify;
+        font-size: 95%;
+    }
+
+    #blog-post p.date {
+        margin-bottom: 15px;
+    }
+
+    #barangay-banner {
+        height: 250px;
+        opacity: 1;
+        background-position: center;
+    }
+
+    #barangay-overview h1 {
+        text-align: center;
+        opacity: 1;
+    }
+
+    #barangay-overview h2 {
+        opacity: 1;
+        text-align: center;
+    }
+
+    #barangay-overview p {
+        text-align: justify;
+        opacity: 1;
+        font-size: 95%;
+    }
+
+    #page-banner {
+        opacity: 1;
+        height: 250px;
+        background-position: center;
+    }
+
+    #our-team h1 {
+        opacity: 1;
+        text-align: center;
+    }
+
+    #our-team p {
+        opacity: 1;
+        font-size: 95%;
+        text-align: justify;
+    }
+
+    .social div.social-logo {
+        opacity: 1;
+    }
+}
+
 /* Extra small devices (lanscape phones, less than 768px) */
 @media (max-width: 767px) {
     .container {
@@ -553,5 +701,9 @@ footer p {
         opacity: 1;
         font-size: 85%;
         text-align: justify;
+    }
+
+    .social div.social-logo {
+        opacity: 1;
     }
 }
